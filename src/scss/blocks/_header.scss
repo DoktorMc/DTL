@@ -7,9 +7,8 @@
       #2d343c61 51.04%,
       #242b33 92.19%
     ),
-    no-repeat url("./../img/Grain-Cargo-Ship.jpg") 
-		;
-		background-size: cover;
+    no-repeat url("./../img/Grain-Cargo-Ship.jpg");
+  background-size: cover;
 
   padding: 30px 0;
   min-height: 100vh;
@@ -27,13 +26,14 @@
   }
 }
 
-.header__content{
-	min-height: 500px;
-	padding: 30px 0;
-	display: flex;
-	align-items: center;
-color: var();
-	&-text{
-		text-align: center;
-	}
+.header__content {
+  min-height: 600px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  color: var();
+  &-text {
+    text-align: center;
+    font-size: 24px;
+  }
 }
