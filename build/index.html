@@ -45,27 +45,66 @@
 					<section class="about">
 						<h1 class="about__header">Про компанію</h1>
 						<div class="about__content">
-							<div class="about__contetn__item">
+							<div class="about__content__item">
 								<span class="about__content__item-text"
 									>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad&#160;totam voluptatem eius aperiam rerum pariatur ipsum cum, consequatur, itaque
 									unde, deserunt repellat quam laborum ipsa maxime ducimus quasi voluptatum iure?</span
 								>
-								<img src="" alt="" class="about__content__item-img" />
+								<img src="./img/truck with grain.jpg" alt="" class="about__content__item-img" />
 							</div>
-							<div class="about__contetn__item">
-								<img src="" alt="" class="about__content__item-img" />
+							<div class="about__content__item">
+								<picture>
+									<source srcset="./img/wheat.webp 1x, ./img/wheat@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/wheat.jpg 1x, ./img/wheat@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/wheat.jpg" alt="" class="about__content__item-img" />
+								</picture>
 								<span class="about__content__item-text"
 									>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad&#160;totam voluptatem eius aperiam rerum pariatur ipsum cum, consequatur, itaque
 									unde, deserunt repellat quam laborum ipsa maxime ducimus quasi voluptatum iure?</span
 								>
 							</div>
-							<div class="about__contetn__item">
+							<div class="about__content__item">
 								<span class="about__content__item-text"
 									>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad&#160;totam voluptatem eius aperiam rerum pariatur ipsum cum, consequatur, itaque
 									unde, deserunt repellat quam laborum ipsa maxime ducimus quasi voluptatum iure?</span
 								>
-								<img src="" alt="" class="about__content__item-img" />
+								<img src="./img/cargo ship in port.jpg" alt="" class="about__content__item-img" />
 							</div>
+						</div>
+					</section>
+
+					<section class="contact-form">
+						<h1 class="contact-form__header">Зв&#8217;язатись з&#160;нами</h1>
+						<div class="contact-form__content">
+							<span class="contact-form__content__description">заповніть форму і ми&#160;з&#160;вами зв&#8217;яжемось</span>
+							<form action="" class="contact-form__content__form">
+								<div class="contact-form__content__form-item">
+									<label for="first_name">Ім&#8217;я</label>
+									<input type="text" name="first_name" id="first_name" />
+								</div>
+
+								<div class="contact-form__content__form-item">
+									<label for="second_nam">Фамілія</label>
+									<input type="text" name="second_name" id="second_name" />
+								</div>
+
+								<div class="contact-form__content__form-item">
+									<label for="email">E-mail</label>
+									<input type="email" name="email" id="email" />
+								</div>
+
+								<div class="contact-form__content__form-item">
+									<label for="tel">Телефон</label>
+									<input type="tel" name="tel" id="tel" />
+								</div>
+
+								<div class="contact-form__content__form-item">
+									<label for="message">Ваше повідомлення&#8230;</label>
+									<textarea name="message" id="message"></textarea>
+								</div>
+
+								<button type="submit">Відправити</button>
+							</form>
 						</div>
 					</section>
 				</div>
