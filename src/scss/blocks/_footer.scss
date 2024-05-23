@@ -1,15 +1,11 @@
 .footer {
   background-color: var(--page-bg);
-  padding: 50px 0;
-  font-size: 32px;
   color: #fff;
-  border-top: 1px solid #dae5e9;
   h1 {
     font-size: 32px;
   }
 
   a {
-    // color: var(--link-color);
     color: #fff;
     text-decoration: underline;
   }
@@ -17,9 +13,23 @@
   @media (max-width: 1200px) {
     font-size: 26px;
   }
-}
-
-.footer__copyright {
-  padding: 10px 0;
-  font-size: 16px;
+  &__wraper {
+    border-top: 1px solid #fff;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+  }
+  &__copyright {
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+  }
+  &__social{
+    
+  }
 }
