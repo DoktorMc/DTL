@@ -8,18 +8,42 @@
   &__content{
     display: flex;
     flex-direction: column;
-     &__item{
+
+    &__description{
+      text-align: center;
+
+      &-title{
+        font-size: 23px;
+        margin-top: 10px;
+      }
+      &-text{
+       padding: 8px;
+       font-size: 20px;
+       color: var(--text-color-blur);
+      }
+    }
+
+    &__services{
       display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &__item{
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-top: 80px;
+      max-width: 500px;
       &-text{
         font-size: 18px;
         text-align: center;
       }
       &-img{
-        min-width: 600px;
+        max-width: 300px;
+        max-height: 300px;
       }
      }
+    }
+     
   }
 }
