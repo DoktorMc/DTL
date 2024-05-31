@@ -1,49 +1,26 @@
-.about{
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__header{
+  &__header {
     font-size: 32px;
   }
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
 
-    &__description{
+    &__description {
       text-align: center;
 
-      &-title{
+      &-title {
         font-size: 23px;
         margin-top: 10px;
       }
-      &-text{
-       padding: 8px;
-       font-size: 20px;
-       color: var(--text-color-blur);
+      &-text {
+        padding: 8px;
+        font-size: 20px;
+        color: var(--text-color-blur);
       }
     }
-
-    &__services{
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      &__item{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 80px;
-      max-width: 500px;
-      &-text{
-        font-size: 18px;
-        text-align: center;
-      }
-      &-img{
-        max-width: 300px;
-        max-height: 300px;
-      }
-     }
-    }
-     
   }
 }
