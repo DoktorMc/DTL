@@ -1,0 +1,62 @@
+.details {
+  &__items {
+    overflow: hidden;
+    background: linear-gradient(var(--page-bg), var(--page-bg)) padding-box,
+      linear-gradient(to bottom, var(--page-bg) 45%, #ffffffb9 95%) border-box;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    margin-bottom: 30px;
+    &-img__transshipment {
+      height: 500px;
+      background: linear-gradient(
+          180deg,
+          // #242b33 0%,
+            #2d343c61 65.04%,
+          #242b33 93.19%
+        ),
+        no-repeat url("./../img/wheat.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    &-img__port_agency{
+      height: 500px;
+      background: linear-gradient(
+          180deg,
+          // #242b33 0%,
+            #2d343c61 65.04%,
+          #242b33 93.19%
+        ),
+        no-repeat url("./../img/port agency.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    &-img__chartering{
+      height: 500px;
+      background: linear-gradient(
+          180deg,
+          // #242b33 0%,
+            #2d343c61 65.04%,
+          #242b33 93.19%
+        ),
+        no-repeat url("./../img/chartering2.webp");
+      background-size: cover;
+      background-position: center;
+    }
+    &-title {
+      text-align: center;
+      font-size: 32px;
+      padding: 10px 0 30px;
+    }
+    &-description {
+      padding: 10px 30px;
+      &__main {
+      }
+      &__list{
+        padding: 10px;
+        &-item{
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

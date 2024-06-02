@@ -18,14 +18,10 @@
   <body>
     @@include('blocks/header.html')
     <main class="docs">
-      <section>
-        <div class="container"> 
-          @@include('blocks/services.html')
-          @@include('blocks/about.html') 
-					<!-- @@include('blocks/advantages.html') -->
-          @@include('blocks/contact_form.html')
-        </div>
-      </section>
+      <div class="container">
+        @@include('blocks/services.html') @@include('blocks/about.html')
+        @@include('blocks/details.html') @@include('blocks/contact_form.html')
+      </div>
     </main>
     @@include('blocks/footer.html')
     <script src="./js/index.bundle.js"></script>
