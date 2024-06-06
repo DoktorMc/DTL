@@ -32,4 +32,14 @@
   &__social{
     
   }
+ 
+  
 }
+.social_contact {
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: right;
+    margin-right: 80px;
+    bottom: 118px;
+    width: inherit;
+  }

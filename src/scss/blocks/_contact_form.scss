@@ -4,22 +4,7 @@
   align-items: center;
   margin: 20px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var-#ffffffb9, red);
-    padding: 5px;
-    border-radius: 20px;
-    -webkit-mask: linear-gradient(0deg, #000 calc(2 * var(--b)), #0000 0) 50%
-        var(--b) / calc(100% - 2 * var(--w)) 100% repeat-y,
-      linear-gradient(-90deg, #000 calc(2 * var(--b)), #0000 0) var(--b) 50%/100%
-        calc(100% - 2 * var(--w)) repeat-x,
-      linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-  }
-
+  
   &__header {
     font-size: 32px;
   }
