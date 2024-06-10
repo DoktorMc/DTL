@@ -1,0 +1,23 @@
+.social__contact {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  bottom: 30px;
+  right: 90px;
+  justify-content: space-between;
+  height: 150px;
+  &-icon {
+    width: 38px;
+  }
+  @include mobile {
+    bottom: 35px;
+    left: 10px;
+    justify-content: space-between;
+    height: 130px;
+    width: 40px;
+    &-icon {
+      width: 35px;
+    }
+  }
+}

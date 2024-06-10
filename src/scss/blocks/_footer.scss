@@ -9,10 +9,6 @@
     color: #fff;
     text-decoration: underline;
   }
-
-  @media (max-width: 1200px) {
-    font-size: 26px;
-  }
   &__wraper {
     border-top: 1px solid #fff;
     padding-top: 45px;
@@ -29,17 +25,20 @@
     font-size: 12px;
     text-align: center;
   }
-  &__social{
-    
+
+  @include tablet {
   }
- 
-  
+  @include mobile {
+    &__wraper {
+      padding-top: 25px;
+      flex-direction: column-reverse;
+      &-icon {
+        margin-bottom: 15px;
+      }
+    }
+    &__information {
+      align-items: center;
+      text-align: center;
+    }
+  }
 }
-.social_contact {
-    position: -webkit-sticky;
-    position: sticky;
-    text-align: right;
-    margin-right: 80px;
-    bottom: 118px;
-    width: inherit;
-  }
