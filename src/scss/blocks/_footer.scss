@@ -27,6 +27,12 @@
   }
 
   @include tablet {
+      &__wraper {
+      justify-content: space-around;
+      &-icon {
+        margin-bottom: 15px;
+      }
+    }
   }
   @include mobile {
     &__wraper {
