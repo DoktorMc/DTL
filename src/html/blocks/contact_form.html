@@ -4,31 +4,31 @@
     <span class="contact__content__description"
       >Заповніть форму і ми з вами зв'яжемось -></span
     >
-    <form action="" class="contact__content__form">
+    <form action="#" id="form" class="contact__content__form">
       
       <div class="contact__content__form-item">
-        <label for="first_name">Ім'я та по батькові:</label>
-        <input type="text" name="first_name" id="first_name" />
+        <label for="name">Ім'я та по батькові:</label>
+        <input type="text" class="_name _req" name="name" id="name" />
       </div>
 
       <div class="contact__content__form-item">
-        <label for="second_nam">Назва компанії:</label>
-        <input type="text" name="second_name" id="second_name" />
+        <label for="company_name">Назва компанії:</label>
+        <input type="text" name="company_name" id="company_name" />
       </div>
 
       <div class="contact__content__form-item">
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" class="_email _req" name="email" id="email" />
       </div>
 
       <div class="contact__content__form-item">
         <label for="tel">Телефон:</label>
-        <input type="tel" name="tel" id="tel" />
+        <input type="tel" class="_phone _req" name="tel" id="tel" />
       </div>
 
       <div class="contact__content__form-item">
         <label for="message">Ваше повідомлення...</label>
-        <textarea name="message" id="message" rows="10" cols="40"></textarea>
+        <textarea name="message" class="_text " id="message" rows="10" cols="40"></textarea>
       </div>
 
       <button class="contact__content__form-button" type="submit">Надіслати</button>
