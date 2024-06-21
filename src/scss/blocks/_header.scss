@@ -13,8 +13,26 @@
 
   &__row {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+
+    &-logo{
+
+    }
+    &-language{
+      display: flex;
+      justify-content: space-between;
+      width: 100px;
+      &__btn{
+        color: var(--text-lang-color-blur);
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+      }
+      & .lang__active{
+        color: var(--text-color);
+        border-bottom: 2px solid var(--button-color);
+      }
+    }
   }
   &__content {
     display: flex;
