@@ -15,23 +15,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
-    &-logo{
-
+    &-logo {
     }
-    &-language{
+    &-language {
       display: flex;
       justify-content: space-between;
-      width: 100px;
-      &__btn{
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: auto;
+      height: 30px;
+      overflow: hidden;
+      transition: all 0.3s;
+      &__btn {
         color: var(--text-lang-color-blur);
         cursor: pointer;
         transition: all 0.2s ease-in;
+        display: none;
       }
-      & .lang__active{
+      & .lang__active {
         color: var(--text-color);
         border-bottom: 2px solid var(--button-color);
+        display: block;
       }
+      &.spring {
+        height: 110px;
+        & .header__row-language__btn {
+          display: block;
+        }
+      }
+    }
+    &-language-mobile {
+      display: none;
     }
   }
   &__content {
@@ -46,18 +64,18 @@
       margin-bottom: 100px;
       font-size: 48px;
       font-weight: 600;
-      text-shadow:  var(--page-bg) 2px 0 10px;
+      text-shadow: var(--page-bg) 2px 0 10px;
     }
     &-text {
       text-align: center;
       font-size: 24px;
       font-weight: 500;
-      text-shadow:  var(--page-bg) 2px 0 10px;
+      text-shadow: var(--page-bg) 2px 0 10px;
     }
   }
   @include tablet {
     &__row {
-      justify-content: center;
+      justify-content: space-around;
     }
     &__content {
       &-title {
@@ -73,6 +91,10 @@
   @include mobile {
     &__row {
       justify-content: center;
+      position: relative;
+
+      &-language {
+      }
     }
     &__content {
       display: flex;

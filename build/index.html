@@ -21,6 +21,11 @@
 						<li class="header__row-language__btn" data-btn="en">EN</li>
 						<li class="header__row-language__btn" data-btn="ru">RU</li>
 					</ul>
+					<!-- <ul class="header__row-language-mobile">
+        <li class="header__row-language-mobile__btn lang__active" data-btnm="ua">UA</li>
+        <li class="header__row-language-mobile__btn" data-btnm="en">EN</li>
+        <li class="header__row-language-mobile__btn" data-btnm="ru">RU</li>
+      </ul> -->
 				</div>
 				<div class="header__content">
 					<h1 class="header__content-title" data-lang="header_title">ТОВ &#171;Дунай Транс Лайн&#187;</h1>
@@ -333,6 +338,7 @@
 					</div>
 				</section>
 				<section class="contact">
+					<a name="contact"></a>
 					<h1 class="contact__header" data-lang="contact_header">Зв&#8217;язатись з&#160;нами</h1>
 					<div class="contact__content">
 						<span class="contact__content__description" data-lang="contact_description">Заповніть форму і ми&#160;з&#160;вами зв&#8217;яжемось &#8594;</span>
@@ -386,15 +392,23 @@
 		</footer>
 
 		<div class="social__contact">
-			<svg class="social__contact-icon">
-				<use href="./img/svgsprite/sprite.symbol.svg#telegram-app"></use>
-			</svg>
-			<svg class="social__contact-icon">
-				<use href="./img/svgsprite/sprite.symbol.svg#whatsapp"></use>
-			</svg>
-			<svg class="social__contact-icon">
-				<use href="./img/svgsprite/sprite.symbol.svg#email"></use>
-			</svg>
+			<a href="#">
+				<svg class="social__contact-icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#telegram-app"></use>
+				</svg>
+			</a>
+
+			<a href="#">
+				<svg class="social__contact-icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#whatsapp"></use>
+				</svg>
+			</a>
+
+			<a href="#contact">
+				<svg class="social__contact-icon">
+					<use href="./img/svgsprite/sprite.symbol.svg#email"></use>
+				</svg>
+			</a>
 		</div>
 
 		<script src="./js/index.bundle.js"></script>
