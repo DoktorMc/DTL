@@ -11,7 +11,6 @@
     border-radius: 50px;
     border: 1px solid transparent;
     margin-bottom: 60px;
-    // width: 360px;
     &-img__transshipment {
       height: 500px;
       background: linear-gradient(
@@ -126,11 +125,11 @@
       }
       &-title {
         text-align: center;
-        font-size: 26px;
+        font-size: 24px;
         padding: 10px 0 10px;
       }
       &-description {
-        padding: 10px 5px;
+        padding: 10px 0;
         &__title {
           text-align: center;
           font-size: 22px;
@@ -140,9 +139,9 @@
           padding: 0 10px;
         }
         &__list {
-          padding: 10px;
+          // padding: 10px;
           &-item {
-            padding: 5px;
+            // padding: 5px;
             font-size: 14px;
           }
         }
