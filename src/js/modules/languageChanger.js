@@ -19,7 +19,6 @@ const currentText = Object.assign(
 
 function changeLang() {
   for (const key in currentText) {
-    console.log("CURR LANG", currentLang);
     const elem = document.querySelector(`[data-lang=${key}]`);
     if (elem) {
       elem.textContent = currentText[key][currentLang];
@@ -28,21 +27,10 @@ function changeLang() {
 }
 changeLang();
 
-// langButtons.forEach((btn) => {
-//   btn.addEventListener("click", (event) => {
-//     currentLang = event.target.dataset.btn;
-
-//     resetActiveClass(langButtons, "lang__active");
-//     btn.classList.add("lang__active");
-//     changeLang();
-//   });
-// });
-
 langButtons.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     if (btn.parentElement.classList.contains("spring")) {
       currentLang = event.target.dataset.btn;
-      console.log("CURR LANG BTN", currentLang);
       resetActiveClass(langButtons, "lang__active");
       btn.classList.add("lang__active");
       resetSpringClass(btn.parentElement, "spring");
