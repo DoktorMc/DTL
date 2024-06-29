@@ -11,8 +11,6 @@
     border-radius: 50px;
     border: 1px solid transparent;
     margin-bottom: 60px;
-    position: relative;
-    // max-height: 850px;
     &-img__transshipment {
       height: 500px;
       width: 100%;
@@ -68,8 +66,12 @@
       padding: 10px 0 30px;
     }
     &-description {
-      padding: 10px 30px;
-
+      padding: 10px 30px 35px;
+      position: relative;
+      max-height: 310px;
+      &.show {
+        max-height: max-content;
+      }
       &__main {
         font-size: 18px;
       }
@@ -80,39 +82,48 @@
           font-size: 16px;
         }
       }
-    }
-    &__bottom {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 55px;
-      opacity: 1;
-      background: linear-gradient(
-        180deg,
-        rgba(36, 43, 51, 0) 0%,
-        rgba(36, 43, 51, 1) 90%
-      );
-      transition: all 0.2s ease-in;
-
-      &__button {
-        border: 2px dashed var(--button-color);
-        border-radius: 20px;
-        width: 38px;
-        height: 38px;
+      &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        opacity: 1;
+        background: linear-gradient(
+          180deg,
+          rgba(36, 43, 51, 0) 0%,
+          rgba(36, 43, 51, 1) 90%
+        );
         transition: all 0.2s ease-in;
-        margin: 5px 0;
 
-        &:hover {
-          border: 2px dashed #fff;
-          background-color: var(--button-color);
+        &.hide-blur {
+          background: transparent;
+          transition: all 0.2s ease-in;
         }
-        &__show {
-          fill: #fff;
-          width: 38px;
-          height: 38px;
+
+        &__button {
+          border: 2px dashed var(--button-color);
+          border-radius: 20px;
+          width: 32px;
+          height: 32px;
+          transition: all 0.2s ease-in;
+          margin: 5px 0;
+          transform: rotate(0deg) translateY(-0.15em);
+          &.rotate {
+            transform: rotate(180deg) translateY(-0.15em);
+          }
+
+          &:hover {
+            border: 2px dashed #fff;
+            background-color: var(--button-color);
+          }
+          &__show {
+            fill: #fff;
+            width: 32px;
+            height: 32px;
+          }
         }
       }
     }
@@ -168,7 +179,7 @@
         padding: 10px 0 10px;
       }
       &-description {
-        padding: 10px 0;
+        padding: 10px 5px 25px;
         &__title {
           text-align: center;
           font-size: 22px;
@@ -191,4 +202,7 @@
       }
     }
   }
+}
+
+@keyframes rotate {
 }
